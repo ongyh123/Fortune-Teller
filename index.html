@@ -105,6 +105,10 @@
 
       // Get the fortune and render it into the DOM
       function getFortune() {
+        // Show a loading message
+        shuffle(loading);
+        fortune.textContent = loading[0];
+
         shuffle(responses);
         fortune.textContent = responses[0];
       }
