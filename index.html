@@ -109,6 +109,9 @@
         shuffle(loading);
         fortune.textContent = loading[0];
 
+        // Clear any existing fortunes
+	    clearTimeout(timeout);
+
         // Set the fortune to show in 2 seconds
         timeout = setTimeout(function () {
           shuffle(responses);
