@@ -112,11 +112,11 @@
         // Clear any existing fortunes
 	    clearTimeout(timeout);
 
-        // Set the fortune to show in 2 seconds
+        // Set the fortune to show in 1 seconds
         timeout = setTimeout(function () {
           shuffle(responses);
           fortune.textContent = responses[0];
-        }, 2000);
+        }, 1000);
       }
 
       // Listen for clicks on the button
