@@ -109,8 +109,11 @@
         shuffle(loading);
         fortune.textContent = loading[0];
 
-        shuffle(responses);
-        fortune.textContent = responses[0];
+        // Set the fortune to show in 2 seconds
+        timeout = setTimeout(function () {
+          shuffle(responses);
+          fortune.textContent = responses[0];
+        }, 2000);
       }
 
       // Listen for clicks on the button
