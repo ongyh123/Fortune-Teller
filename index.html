@@ -94,7 +94,8 @@
 
       // Get the fortune and render it into the DOM
       function getFortune() {
-        fortune.textContent = `You're going to have a wonderful day!`;
+        shuffle(responses);
+        fortune.textContent = responses[0];
       }
 
       // Listen for clicks on the button
